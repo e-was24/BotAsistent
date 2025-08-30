@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirim Lokasi ke WhatsApp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        body {
+            background: white;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+            gap: 1em;
+        }
+
+        .btn {
+            background: white;
+            color: black;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: ease-in-out .3s;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        .btn:hover {
+            background: blue;
+            color: white;
+        }
+
+        .status-message {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #333;
+            min-width: 250px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kirim Lokasi ke WhatsApp</h1>
+    <p>Klik tombol di bawah untuk membagikan lokasi Anda.</p>
+    <input type="text" id="username" placeholder="Masukkan nama Anda" required style="margin-bottom: 10px; padding: 5px; border-radius: 5px; border: 1px solid #ccc;">
+    <button class="btn" id="sendLocationBtn">Kirim Lokasi ke WhatsApp</button>
+    
+    <div class="status-message" id="statusMessage"></div>
+    
+    <script src="script.js">
+    </script>
+</body>
+</html>
